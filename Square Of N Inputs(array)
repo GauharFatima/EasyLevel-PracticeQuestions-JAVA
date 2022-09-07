@@ -1,0 +1,24 @@
+import java.util.*;
+class Main {
+	public static void main(String args[]) {
+		/*given an integer N , generate and print the squre of all the numbers
+		fom 1 to N.*/
+		
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int sqr = 0;
+		int[] ansArray = new int[n];
+		for(int i = 0; i < n; i++){
+			sqr = (i + 1) * (i + 1);
+			ansArray[i] = sqr;
+		}
+		// printing the array-> way 1 using enhance for loop
+		for(int nums : ansArray){
+			System.out.print(Arrays.toString())
+			System.out.print(nums + " ");
+		}
+		// printing the ansArray way 2-> using inbuild function 
+		System.out.print(Arrays.toString(ansArray));
+		
+	}
+}
